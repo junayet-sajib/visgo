@@ -1,0 +1,53 @@
+.get-in-touch {
+  padding: 170px 0;
+  h2 {
+    line-height: 60px;
+  }
+  p {
+    color: #313131;
+    line-height: 24px;
+  }
+}
+.contact-form-main {
+  form {
+    &.contact-form {
+      padding-top: 150px;
+      input {
+        width: 100%;
+        border: 1px solid #cccccc;
+        padding: 20px;
+        @include border-radius(4px);
+        &::placeholder {
+          text-align: left;
+        }
+      }
+      textarea {
+        border: 1px solid #cccccc;
+        width: 100%;
+        resize: none;
+        &::placeholder {
+          text-align: left;
+          @include border-radius(4px);
+          padding: 20px;
+        }
+      }
+    }
+  }
+  a {
+    &.btn {
+      &.send-btn {
+        background: $light-pink;
+        padding: 18px 45px;
+        color: $white;
+      }
+    }
+  }
+}
+.footer-social-icon {
+  &.contact-page-icon-style {
+    i {
+      margin-left: 10px;
+      margin-right: 8px;
+    }
+  }
+}

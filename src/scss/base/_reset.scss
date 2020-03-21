@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+/*--Fonts--*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800|Muli:400,600,700,800|Poppins:300,400,500,600&display=swap");
+
+.roboto {
+  font-family: "Ubuntu", sans-serif;
+}
+.muli {
+  font-family: "Muli", sans-serif !important;
+}
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+//For Custom Fonts
+
+/* @font-face {
+    font-family: "navis";
+    src: url("webfonts/nevis.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 30px;
+  color: $black;
+  letter-spacing: 0.2px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0px !important;
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+a {
+  color: $pink;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: $pink;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  -ms-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.btn:focus,
+a.btn:focus {
+  outline: none;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  @include font-muli;
+}
+hr {
+  box-sizing: border-box;
+  border: 0.5px solid rgba(216, 216, 216, 0.26) !important;
+  margin-top: 0.6rem;
+  margin-bottom: 24px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none !important;
+}
+.table td,
+.table th {
+  vertical-align: top;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+::-moz-selection {
+  background: $pink;
+  text-shadow: none;
+  color: #fff;
+}
+
+::selection {
+  background: $pink;
+  text-shadow: none;
+  color: $white;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/*--Row and Rows--*/
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+.row.rows {
+  margin: -15px;
+}
+
+.row.rows .columns {
+  padding: 15px;
+}
+
+/*--Custom Row and Column--*/
+.custom-row {
+  margin: -5px -10px;
+}
+
+.custom-column {
+  padding: 5px 10px;
+}
+
+/*--Other Common Classes--*/
+
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+.font-weight-normal {
+  font-weight: normal;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+}

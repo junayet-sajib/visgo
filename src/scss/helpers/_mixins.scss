@@ -1,0 +1,95 @@
+// Font Mixins
+@mixin font-muli {
+  font-family: "Muli", sans-serif;
+}
+@mixin font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+@mixin font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin img-pos {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+// Box Shaddow
+@mixin black-box-shadow {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+}
+
+@mixin blue-box-shadow {
+  .box-shadow-blue {
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0 0 12px rgba(70, 141, 240, 0.257);
+
+    &:hover {
+      z-index: 9999;
+      box-shadow: 0 14px 18px rgba(70, 141, 240, 0.199);
+      transform: translateY(-3px);
+      -webkit-transform: translateY(-3px);
+    }
+  }
+}
+
+@mixin overlay() {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+/* Extra small devices (phones, 600px and down) */
+@mixin small-device {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin medium-device {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin large-device {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin extra-large-device {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

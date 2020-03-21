@@ -1,0 +1,81 @@
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background: $light-gray;
+}
+
+.contact-us-text {
+  h4 {
+    padding-bottom: 15px;
+  }
+  span {
+    font-weight: 500;
+    color: $light-pink;
+  }
+}
+
+.footer-social-icon {
+  i {
+    border: 1px solid;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    color: $text-gray;
+  }
+  padding-top: 28px;
+}
+
+.contact-us-text p {
+  font-weight: 400;
+}
+
+.footer-logo {
+  p {
+    padding-top: 12px;
+    font-weight: 400;
+  }
+}
+
+.footer-download-btn {
+  h6 {
+    color: #737373;
+  }
+  .play-app-img {
+    padding-top: 17px;
+    a {
+      &:last-child {
+        padding-left: 16px;
+      }
+    }
+  }
+}
+
+//contact page footer
+.footer-menu ul {
+  li {
+    display: inline;
+    padding: 15px;
+    a {
+      color: $black;
+      font-weight: 600;
+      padding-bottom: 5px;
+      &:hover,
+      &.active {
+        color: $light-pink;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//Responsive
+@include medium-device {
+  .main-footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}

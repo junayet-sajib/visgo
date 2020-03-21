@@ -1,0 +1,30 @@
+//Blog Page top Slider
+.slick-arrow {
+  position: absolute;
+  z-index: 99;
+  bottom: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #afafaf;
+  border: 1px solid #e1e1e1;
+  &:hover {
+    border: 1px solid #b7b7b7;
+    color: $light-pink;
+    transition: all 0.3s;
+  }
+}
+
+i.fa.fa-arrow-left.slick-arrow {
+  right: 100px;
+}
+
+i.fa.fa-arrow-right.slick-arrow {
+  right: 40px;
+}
+
+//single post slider
+.single-blog-post-small-img .slick-arrow {
+  bottom: 65px;
+  padding: 15px;
+  background: #dbdbdb;
+}

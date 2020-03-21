@@ -1,0 +1,198 @@
+.feature-cites {
+  padding: 75px 0;
+
+  .feature-cites-tittle {
+    padding-bottom: 31px;
+    font-weight: 800;
+    color: $text-gray;
+  }
+  .single-feature-city {
+    position: relative;
+    @include border-radius(10px);
+    @include img-pos;
+    background-position: center center;
+    height: 350px;
+    width: auto;
+    &::before {
+      @include overlay;
+      background: rgba(27, 27, 27, 0.459);
+
+      @include border-radius(10px);
+    }
+    .single-feature-city-content {
+      position: relative;
+      z-index: 2;
+      top: 250px;
+      padding: 0 27px 0 27px;
+      h2 {
+        font-weight: 700;
+        line-height: 50px;
+      }
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+}
+.single-feature-city-bg-1 {
+  background: url(../img/cairo.png);
+}
+.single-feature-city-bg-2 {
+  background: url(../img/giza.png);
+}
+.single-feature-city-bg-3 {
+  background: url(../img/luxor.png);
+}
+
+.single-feature-city-bg-4 {
+  background: url(../img/aswan.png);
+}
+
+a {
+  &.btn {
+    &.all-city-btn {
+      border-radius: 0;
+      padding: 0;
+      margin: 15px;
+      color: $text-gray;
+      text-decoration: underline;
+      &::after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        color: $text-gray;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//Iconic Place
+
+.iconic-place {
+  padding-bottom: 75px;
+  .iconic-place-tittle {
+    padding-bottom: 31px;
+    font-weight: 800;
+    color: $text-gray;
+  }
+  .single-iconic-place {
+    position: relative;
+    @include border-radius(10px);
+
+    @include img-pos;
+    background-position: center center;
+    height: 350px;
+    width: auto;
+    &::before {
+      @include overlay;
+      background: rgba(27, 27, 27, 0.459);
+
+      @include border-radius(10px);
+    }
+    .single-iconic-place-content {
+      position: relative;
+      z-index: 2;
+      top: 250px;
+      padding: 0 27px 0 27px;
+      h2 {
+        font-weight: 700;
+        line-height: 50px;
+      }
+      p {
+        font-weight: 400;
+      }
+      .iconic-place-time {
+        font-weight: 800;
+      }
+    }
+  }
+}
+.single-iconic-place-bg-1 {
+  background: url(../img/iconic-p-1.png);
+}
+.single-iconic-place-bg-2 {
+  background: url(../img/iconic-p-2.png);
+}
+.single-iconic-place-bg-3 {
+  background: url(../img/iconic-p-3.png);
+}
+
+.single-iconic-place-bg-4 {
+  background: url(../img/iconic-p-4.png);
+}
+
+a {
+  &.btn {
+    &.all-city-btn {
+      border-radius: 0;
+      padding: 0;
+      margin: 15px;
+      color: $text-gray;
+      text-decoration: underline;
+      &::after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        color: $text-gray;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+//latest-travel-update
+.latest-travel-update {
+  .latest-travel-update-content {
+    h2 {
+      font-weight: 400;
+      color: $text-gray;
+      line-height: 60px;
+    }
+  }
+  .latest-travel-update-input {
+    input {
+      border-bottom: 1px solid #afafaf;
+      text-align: left;
+      padding-bottom: 20px;
+      position: relative;
+      &::placeholder {
+        text-align: left;
+      }
+    }
+    i {
+      position: absolute;
+      top: -10px;
+      left: 90%;
+      background: #f45c75;
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+
+//latest Travel Update
+
+.latest-travel-update {
+  padding-bottom: 78px;
+}
+
+//responsive scss
+@include medium-device {
+  .latest-travel-update .latest-travel-update-input i {
+    left: 85%;
+  }
+  .latest-travel-update {
+    padding-bottom: 48px;
+  }
+  .feature-cites {
+    padding: 30px 0;
+  }
+}
+@include large-device {
+  .feature-cites-page .feature-cites-tittle {
+    line-height: 30px !important;
+  }
+}

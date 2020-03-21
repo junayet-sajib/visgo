@@ -1,0 +1,258 @@
+#mainNav {
+  padding-top: 20px;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 22px;
+  right: 0;
+  padding: 8px;
+  text-transform: uppercase;
+  color: $pink;
+  border: 0;
+  font-weight: 500;
+  background: transparent;
+  border: 0px solid #fff !important;
+  outline: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  text-decoration: none;
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: none !important;
+}
+#mainNav .navbar-brand {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  transition: width 0.3s;
+}
+.header-logo {
+  max-height: 55px;
+  max-width: 40px;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  text-shadow: none;
+  color: $white;
+  @include font-muli;
+  text-align: left;
+  text-transform: capitalize;
+  &.active {
+    color: $light-pink;
+    svg path {
+      fill: $pink;
+    }
+  }
+}
+// .dropdown-item {
+//   padding-top: 12px;
+//   padding-right: 12px;
+//   padding-bottom: 12px;
+//   padding-left: 20px;
+//   font-size: 16px;
+//   font-weight: normal;
+//   color: #4081d6 !important;
+//   font-family: "Ubuntu", sans-serif;
+//   text-align: left;
+//   text-transform: capitalize;
+// }
+// .dropdown-toggle::after {
+//   border: none;
+//   font: normal normal normal 12px/1 "Font Awesome 5 Free";
+//   content: "\f078";
+//   vertical-align: 0;
+// }
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: $light-pink;
+}
+#mainNav .navbar-nav .nav-item .nav-link span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+// Styling for the masthead
+header.masthead {
+  // height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(3, 3, 7)),
+    url(../img/Pyramids.jpg);
+  @include img-pos;
+  background-position: center right;
+  &::before {
+  }
+  .intro-text {
+    position: relative;
+    z-index: 3;
+    font-weight: 800;
+    font-size: 120px;
+  }
+  .hero-para {
+    font-weight: 400;
+  }
+}
+@media (min-width: 768px) {
+  header.masthead {
+    .intro-text {
+      padding: 300px 0 300px 0;
+      .intro-heading {
+        font-size: 120px;
+        font-weight: 800;
+        line-height: 120px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #mainNav {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    img {
+      width: 100px;
+      transition: all 0.3s;
+    }
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.6em 1.1em !important;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: $pink;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    background-color: $gray;
+    // box-shadow: 0 10px 40px rgba(70, 141, 240, 0.164);
+    box-shadow: 4px 6px 35px #dcdcdc;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    img {
+      width: 70px;
+    }
+  }
+  .dropdown > .dropdown-menu {
+    background-color: $white;
+    box-shadow: 10px 10px 40px 0px rgba(119, 168, 236, 0.274);
+    transform: translateY(0.5em);
+    transition: visibility 0.2s ease, transform 0.2s ease;
+    border: 0px solid#ddd;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    top: 80%;
+  }
+
+  .dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+  }
+  .dropdown-item {
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4081d6 !important;
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  #mainNav {
+    background-color: $gray;
+    box-shadow: 0 12px 15px rgba(70, 141, 240, 0.164);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-nav {
+    border-top: 1px solid rgba(221, 221, 221, 0.521) !important;
+  }
+  #mainNav .navbar-brand {
+    img {
+      width: 70px;
+    }
+  }
+  .navbar-collapse {
+    width: 60%;
+  }
+}
+
+//Nav Customization for Cities
+nav.citynav#mainNav {
+  box-shadow: 4px 6px 35px #dcdcdc;
+  background-color: $white;
+}
+nav.citynav#mainNav .navbar-nav .nav-item .nav-link {
+  color: $black;
+  border: none !important;
+  text-decoration: none !important;
+  &:hover {
+    color: $light-pink;
+    text-decoration: underline !important;
+  }
+}
+nav.citynav#mainNav .navbar-nav .nav-item .nav-link.active,
+nav.citynav#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: $light-pink;
+  text-decoration: underline !important;
+}
+//responsive
+@include medium-device {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: $black;
+  }
+  header.masthead {
+    padding-top: 150px;
+    .intro-text {
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@include large-device {
+  header.masthead {
+    .intro-text {
+      padding: 200px 0;
+      .intro-heading {
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 90px;
+      }
+    }
+  }
+}
